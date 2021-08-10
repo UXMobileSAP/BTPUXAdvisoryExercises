@@ -110,3 +110,67 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 ![Sample Image POC#17](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/17-open-site-directory.png)
 
+### Step 4: Access the SAP Launchpad service
+
+> Now that you have the SAP Launchpad Service set up, you are ready to complete the rest of the steps, please proceed as follows
+
+1. Create a site
+2. Enter SAPBTPSite as the site name
+3. Navigate to the site Directory and explore various settings that you could apply to the site
+
+>in the next steps you are going to add business apps to this launchpad
+
+### Step 5: Add an SAPUI5 App to Your Launchpad Site
+
+1. Using the Content Manager Create and configure a new app
+2. Enter app properties as follows
+
+- Title `Orders`
+- Open App `In Place`
+- URL `https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/cart/webapp/index.html`
+
+3. Using the navigation tab, specify the intent of your app with the following values:
+
+- Semantic Object `Order`
+- Action `Display`
+
+4. Using the Visualization tab insert the following values:
+
+- Subtitle `Shopping Cart`
+- Information `Order Item`
+- Icon `my-sales-order`
+
+5. Preview the app you created in the content manager
+>Your app should be visible under items in the content manager
+
+6. Edit the Everyone role to make the app visible to all users of your site using the assignements panel of the role
+
+7. Create a group and assign the application to it using the content manager using the following properties:
+- Title `Purchasing`
+
+8. Preview your site using the site directory. Your new app should be displayed in the purchasing group. Click on the app to launch it
+
+### Step 6: Add a URL App to Your Launchpad Site
+
+1. Using the content manager again create and configure a new app with the following properties:
+- Title `Innovation at SAP`
+- Open App `In Place`
+- URL `https://sap.io`
+
+2. Using the navigation tab, specify the intent of the application as follows:
+- Semantic Object `Innovation`
+- Action `Display`
+
+3. Using the visualization tab specify the following parameters:
+- Subtitle `SAP.io program`
+- Information `Learn about SAP.io`
+- Icon `https://sap.io`
+
+4. View the app you have created using the content manager
+5. 
+6. Assign the app to the everyone role
+7. 
+8. Create a group and assign the app to it
+
+> Nice work! you have created your very own Launchpad site and included two apps!
+10. Preview the site
