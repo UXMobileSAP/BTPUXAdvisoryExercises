@@ -121,10 +121,7 @@
 ### Step 8: Enable multiple selection in table
 1. Open the command Palette using **CTRL + Shift + P** and type `Guided Development`. Select **Fiori: Open Guided Development**
 
-![Image #14](https://developers.sap.com/tutorials/fiori-tools-generate-project/_jcr_content.github-proxy.1617374362.file/t2-select-npm-start.png)
-
 2. Using the search box type `multi` and expand **List Report Page | Enbale multiple selection in tables** and then click the guide title to expand the guide
-![Image #14](https://developers.sap.com/tutorials/fiori-tools-generate-project/_jcr_content.github-proxy.1617374362.file/t2-select-npm-start.png)
 
 > To understand what the feature does you can read the description.
 
