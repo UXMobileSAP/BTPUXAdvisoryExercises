@@ -30,7 +30,7 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 2. Click `Continue` on the below popup.
 
-![Sample Image POC#2] (https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/2_Foundation20Onboarding_Processing.png)
+![Sample Image POC#2](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/2_Foundation20Onboarding_Processing.png "Pop up")
 
 3. Click the `trial` tile to navigate to your trial subaccount in the SAP BTP cockpit. If you’re using your own subaccount, you can select it instead.
 
