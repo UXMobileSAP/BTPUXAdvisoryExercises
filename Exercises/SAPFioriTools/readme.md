@@ -107,7 +107,7 @@
 ![Image #11](https://developers.sap.com/tutorials/fiori-tools-generate-project/_jcr_content.github-proxy.1617374362.file/t2-project-structure.png)
 
 ### Step 7: Preview app with real backend data
-1. From the SBAS Explorer on the left, right-click the project and select **Preview Application**
+1. From the SBAS Explorer on the left, right-click the **webapp** folder and select **Preview Application**
 
 ![Image #12](https://developers.sap.com/tutorials/fiori-tools-generate-project/_jcr_content.github-proxy.1617374362.file/t2-open-preview-application.png)
 
