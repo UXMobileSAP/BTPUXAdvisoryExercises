@@ -34,6 +34,8 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 3. Click the `trial` tile to navigate to your trial subaccount in the SAP BTP cockpit. If you’re using your own subaccount, you can select it instead.
 
+![Sample Image POC#3](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/3_open_subaccount.png)
+
 4. Click `Go to Marketplace`. Alternatively, you can navigate to the service marketplace by clicking on the `Services` menu item and selecting `Service Marketplace`.
 
 > The Service Marketplace provides you access to all services and applications that you can access from the SAP BTP cockpit.
