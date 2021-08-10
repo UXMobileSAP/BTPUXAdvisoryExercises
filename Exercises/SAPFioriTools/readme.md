@@ -43,25 +43,19 @@
 
 >You have now sucessfully activated SAP Business Application Studio. 
 
-### Step 3: Launch SAP Business Application Studio
+### Step 3: Create a Dev Space
 
-1. Click **Go to Application** from the SAP BTP Cockpit under "instances and subscriptions"
+1. Click **Create Dev Space** 
 
-![Image #7](https://developers.sap.com/tutorials/appstudio-onboarding/_jcr_content.github-proxy.1614933779.file/Cockpit-Go-to-Application-.png)
+2. Enter a name for your dev space.
 
-2. If you are asked to accept legal terms, check the box and click **OK**
+3. Leave all settings as default and click **Create Dev Space**
 
-> If an access denied page appears, Log out from SBAS and then log in again
+> The Dev space will take some time to spin up.
 
-3. Enter your credentials and log on (if needed)
+4. Once the dev space is created click on the start button to launch it
 
-> the welcome page for SAP Business Application studio should load
-
-![Image #8](https://developers.sap.com/tutorials/appstudio-onboarding/_jcr_content.github-proxy.1614933779.file/BAS-Welcome--.png)
-
-4. Click on **My Dev Spaces** to open the SAP Business Application Studio dev space manager page
-
-5. Create a dev space and Launch SBAS
+>SAP Business Application Studio will open
 
 ### Step 4: Launch Application Generator
 
