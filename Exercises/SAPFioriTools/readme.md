@@ -21,7 +21,7 @@
 
 1. Click SAP Business Application Studio to launch SAP Business Application Studio.
 
-![Image #2](https://developers.sap.com/tutorials/appstudio-onboarding.html)
+![Image #2](https://developers.sap.com/tutorials/appstudio-onboarding/_jcr_content.github-proxy.1614933779.file/BTP-Access-AppStudio-.png)
 
 > SAP Business Application is subscribed by default in recently created trial accounts.
 
