@@ -40,21 +40,32 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 > The Service Marketplace provides you access to all services and applications that you can access from the SAP BTP cockpit.
 
+![Sample Image POC#4](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/4-go-to-marketplace.png)
+
 5. Enter `launchpad` in the search box and click the `Launchpad Service` tile.
+
+![Sample Image POC#5](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/5-find-launchpad-tile.png)
 
 > If you aren’t able to find the `Launchpad Service` tile, or if you can’t access it, you may be using an older trial account. You can easily add it to your account via the Entitlements area. Click Configure Entitlements and then Add Service Plans. Then search for launchpad, check the standard plan, and click Add 1 Service Plan. Don’t forget to save in the next screen.
 
 6. From the `Overview` tab on the right, click the Actions icon (…) and select `Create` in the opened menu to create a new subscription.
 
+![Sample Image POC#6](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/6-create-subscription.png)
+
 > You can also use the `Create` button at the top right of the screen.
 
 7. In the `New Instance or Subscription` dialog box that opens, leave the basic information that appears there and click `Create`.
 
+![Sample Image POC#7](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/7-create.png)
+
 8. You’ll get confirmation that your subscription is being created. Click `View Subscription`.
+![Sample Image POC#8](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/8-view-subscription.png)
 
 > This step will redirect you to the Services -> Instances and Subscriptions screen. This screen provides you with an overview of all services and applications that are currently active.
 
 9. From the `Instances and Subscriptions` screen, you’ll see that you are subscribed to the SAP Launchpad service.
+
+![Sample Image POC#9](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/9-subscribed.png)
 
 ### Step 2: Add yourself to the Launchpad_Admin role
 
@@ -62,13 +73,23 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 1. Click `Security > Trust Configuration` from the side menu.
 
+![Sample Image POC#10](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/10-trust-configuration.png)
+
 2. Click `Default identity provider` to select the SAP ID Service.
+
+![Sample Image POC#11](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/11-default-identity-provider.png)
 
 3. Enter your email address and then click `Show Assignments`.
 
+![Sample Image POC#12](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/12-show-assignments.png)
+
 4. Click `Assign Role Collection`.
 
+![Sample Image POC#13](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/13-assign-role-collection.png)
+
 5. Select the `Launchpad_Admin` role and then click `Assign Role Collection`.
+
+![Sample Image POC#14](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/14-assign-launchpad-admin.png)
 
 > You have now been assigned to the Launchpad_Admin role and you can access the SAP Launchpad service and carry out all your admin tasks.
 
@@ -79,12 +100,13 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 1. Use the breadcrumbs to open your trial account.
 
+![Sample Image POC#15](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/15-open-trial.png)
+
 2. Click `Instances and Subscriptions` from the side panel, click the `Subscriptions` tab, click the Actions icon (…) on the right, and select `Go to Application`.
+
+![Sample Image POC#16](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/16-go-to-application.png)
 
 >The SAP Launchpad service opens with the Site Directory in focus. This is where you’ll create and manage your launchpad sites.
 
-```
-sample code block formatting if needed
-
-```
+![Sample Image POC#17](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/17-open-site-directory.png)
 
