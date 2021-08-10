@@ -67,7 +67,7 @@
 
 1. In Visual Studio Code open Command Palette using **CTRL + Shift + P**, type **Application Generator** and select **Fiori: Application Generator**
 
-![Image #9](https://developers.sap.com/tutorials/appstudio-onboarding/_jcr_content.github-proxy.1614933779.file/BAS-Welcome--.png)
+![Image #9](https://developers.sap.com/tutorials/fiori-tools-generate-project/_jcr_content.github-proxy.1617374362.file/t2-application-generator.png)
 
 ### Step 5: Select Application Template
 
