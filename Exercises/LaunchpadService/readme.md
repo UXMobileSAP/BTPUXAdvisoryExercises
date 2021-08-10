@@ -125,20 +125,20 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 1. Using the Content Manager Create and configure a new app
 2. Enter app properties as follows
 
-- Title `Orders`
-- Open App `In Place`
-- URL `https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/cart/webapp/index.html`
+ - Title `Orders`
+ - Open App `In Place`
+ - URL `https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/cart/webapp/index.html`
 
 3. Using the navigation tab, specify the intent of your app with the following values:
 
-- Semantic Object `Order`
-- Action `Display`
+ - Semantic Object `Order`
+ - Action `Display`
 
 4. Using the Visualization tab insert the following values:
 
-- Subtitle `Shopping Cart`
-- Information `Order Item`
-- Icon `my-sales-order`
+ - Subtitle `Shopping Cart`
+ - Information `Order Item`
+ - Icon `my-sales-order`
 
 5. Preview the app you created in the content manager
 >Your app should be visible under items in the content manager
@@ -153,18 +153,18 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 ### Step 6: Add a URL App to Your Launchpad Site
 
 1. Using the content manager again create and configure a new app with the following properties:
-- Title `Innovation at SAP`
-- Open App `In Place`
-- URL `https://sap.io`
+ - Title `Innovation at SAP`
+ - Open App `In Place`
+ - URL `https://sap.io`
 
 2. Using the navigation tab, specify the intent of the application as follows:
-- Semantic Object `Innovation`
-- Action `Display`
+ - Semantic Object `Innovation`
+ - Action `Display`
 
 3. Using the visualization tab specify the following parameters:
-- Subtitle `SAP.io program`
-- Information `Learn about SAP.io`
-- Icon `https://sap.io`
+ - Subtitle `SAP.io program`
+ - Information `Learn about SAP.io`
+ - Icon `https://sap.io`
 
 4. View the app you have created using the content manager
 
