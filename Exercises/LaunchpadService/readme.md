@@ -12,7 +12,7 @@
 
 To get the exercises you have two solutions:
 
-- If you want to use a trial environment, you need to first register it. You can register to a trial account using this link: Create a trial account.
+- If you want to use a trial environment, you need to first register it. You can register to a trial account using this link: [Create a trial account](https://www.sap.com/cmp/td/sap-cloud-platform-trial.html)
 - If you’re using a production environment, you should have a subaccount configured. If you don’t have a configured subaccount, refer to this topic: Initial Setup.
 
 ### Step 1: Subscribe to the SAP Launchpad service
