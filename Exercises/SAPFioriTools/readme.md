@@ -53,7 +53,7 @@
 
 > The Dev space will take some time to spin up.
 
-4. Once the dev space is created click on the start button to launch it
+4. Once the dev space is created click on the dev space name to launch it
 
 >SAP Business Application Studio will open
 
