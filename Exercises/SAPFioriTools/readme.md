@@ -99,7 +99,10 @@
 - project folder: specify where you want to save your project
 
 2. Click **Finish**
-3. Verify that your project looks similar to this:
+
+>If your workspace doesn't open by default you may need to click **File** -> **Open Workspace** and navigate to the workspace you created earlier, then click **open**
+
+4. Verify that your project looks similar to this:
 
 ![Image #11](https://developers.sap.com/tutorials/fiori-tools-generate-project/_jcr_content.github-proxy.1617374362.file/t2-project-structure.png)
 
