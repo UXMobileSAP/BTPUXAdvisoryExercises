@@ -100,6 +100,7 @@
 
 2. Click **Finish**
 3. Verify that your project looks similar to this:
+
 ![Image #11](https://developers.sap.com/tutorials/fiori-tools-generate-project/_jcr_content.github-proxy.1617374362.file/t2-project-structure.png)
 
 ### Step 7: Preview app with real backend data
