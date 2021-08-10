@@ -167,10 +167,12 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 - Icon `https://sap.io`
 
 4. View the app you have created using the content manager
-5. 
-6. Assign the app to the everyone role
-7. 
-8. Create a group and assign the app to it
+
+5. Assign the app to the everyone role
+ 
+6. Create a group and assign the app to it
+
+7. Preview the site
 
 > Nice work! you have created your very own Launchpad site and included two apps!
-10. Preview the site
+
