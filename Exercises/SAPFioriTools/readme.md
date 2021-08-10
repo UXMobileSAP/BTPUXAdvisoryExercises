@@ -114,6 +114,8 @@
 2. Select `Start` and press `Enter` to preview the app with backend data
 3. Verify that your app runs correctly
 
+>You will need to input the credentials you created earlier when you created your ESH account.
+
 ![Image #13](https://developers.sap.com/tutorials/fiori-tools-generate-project/_jcr_content.github-proxy.1617374362.file/t2-select-npm-start.png)
 
 ### Step 8: Enable multiple selection in table
