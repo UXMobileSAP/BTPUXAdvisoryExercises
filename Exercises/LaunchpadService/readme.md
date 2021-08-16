@@ -110,7 +110,37 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 ![Sample Image POC#17](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started/_jcr_content.github-proxy.1627981231.file/17-open-site-directory.png)
 
-### Step 4: Access the SAP Launchpad service
+### Step 4: Connect SAP BTP to your SAP Gateway Demo System Account from ES5
+
+> You will now create a connection between SAP BTP multi-cloud and the SAP Gateway Demo System - ES5
+> Please note, that you will need to have already created an account on the SAP Gateway Demo System, if not already done, please do so here: [SAP Gateway Demo System](https://developers.sap.com/tutorials/gateway-demo-signup.html)
+
+1. Navigate to your trial subaccount in the SAP BTP Cockpit.
+
+![Sample Image POC](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-gateway-connection/_jcr_content.github-proxy.1624468779.file/2-click-trial.png)
+
+2. Select `Destinations` under the `Connectivity` dropdown
+
+![Sample Image POC](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-gateway-connection/_jcr_content.github-proxy.1624468779.file/3-open-destinations.png)
+
+3. Select `New Destination`
+
+4. Add the below destination properties:
+
+ - WebIDEEnabled `true`
+ - WebIDESystem `Gateway`
+ - WebIDEUsage `odata_abap,dev_abap`
+ - sap-platform `ABAP`
+ - sap-client `002`
+ - HTML5.DynamicDestination `true`
+
+5. Click `Save`
+
+6. Click `Check Connection` to ensure that everything works
+
+>you should get confirmation that everything work as expected
+
+### Step 5: Create a new Launchpad Site
 
 > Now that you have the SAP Launchpad Service set up, you are ready to complete the rest of the steps, please proceed as follows
 
@@ -120,7 +150,7 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 >in the next steps you are going to add business apps to this launchpad
 
-### Step 5: Add an SAPUI5 App to Your Launchpad Site
+### Step 6: Add an SAPUI5 App to Your Launchpad Site
 
 1. Using the Content Manager Create and configure a new app
 2. Enter app properties as follows
@@ -150,7 +180,7 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 8. Preview your site using the site directory. Your new app should be displayed in the purchasing group. Click on the app to launch it
 
-### Step 6: Add a URL App to Your Launchpad Site
+### Step 7(optional): Add a URL App to Your Launchpad Site
 
 1. Using the content manager again create and configure a new app with the following properties:
  - Title `Innovation at SAP`
@@ -176,3 +206,23 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 > Nice work! you have created your very own Launchpad site and included two apps!
 
+### Step 8(optional): Add an SAP Web Dynpro App to your Launchpad Site
+
+1. Access the content manager for your Launchpad site
+2. Click `+ New` and Select `App`
+3. Enter the following properties for the app: 
+
+ - Title `Search Purchase Orders`
+ - System `ES5`
+ - App UI Technology `Web Dynpro ABAP`
+ - Application ID `S_EPM_FPM_PO`
+
+4. For Navigation provide the following values:
+ - Semantic Object `S_EPM_FPM_PO`
+ - Action `Display`
+
+5. For Visualization provide whichever values you would like and click save
+
+6. Assign your app to the everyone role and a group so that it will become visible in your site
+
+7. Launch and preview the app.
