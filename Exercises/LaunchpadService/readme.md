@@ -183,18 +183,17 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 ### Step 7(optional): Add a URL App to Your Launchpad Site
 
 1. Using the content manager again create and configure a new app with the following properties:
- - Title `Innovation at SAP`
+ - Title `URL Tile`
  - Open App `In Place`
- - URL `https://sap.io`
+ - URL `https://www.google.com/`
 
 2. Using the navigation tab, specify the intent of the application as follows:
- - Semantic Object `Innovation`
+ - Semantic Object `URL`
  - Action `Display`
 
 3. Using the visualization tab specify the following parameters:
- - Subtitle `SAP.io program`
- - Information `Learn about SAP.io`
- - Icon `https://sap.io`
+ - Subtitle `Google`
+ - Information `Any link you want can be provided here`
 
 4. View the app you have created using the content manager
 
