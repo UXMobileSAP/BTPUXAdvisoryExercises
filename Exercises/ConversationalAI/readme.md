@@ -11,7 +11,7 @@
 ### Prerequisites
 
 - Proceed to [The SAP Conversational AI Website](https://cai.tools.sap/) and click `sign up` in the top right corner
-![CAISignIn]()
+![CAISignIn](https://sap-my.sharepoint.com/personal/adam_cody_sap_com/Documents/Shared%20UX%20Workshop%20Material/BTPUXS/CAI/sign%20up.png?Web=1)
 
 ### Step 1: Subscribe to the SAP Launchpad service
 
