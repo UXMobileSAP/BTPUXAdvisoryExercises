@@ -78,3 +78,13 @@
 3. Fill in the intent properties as follows:
   - Name : `beerRecommendations`
   - Description: `Get beer recommendations from your chatbot`
+
+4. Click `Create Intent`
+
+### Step 4 Add Expressions To Your Itent
+
+1. Click on the `beerrecommendations` Intent
+
+2. In the expressions section, add an expression which is related to your intent and press `Enter`
+
+![CAINewIntent](https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fsap-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!rydzKXsjWEKcYbhowr6DvH39XgIdTuxJsmm4FTdmCWAgR284tJ1QSY_9zR70uEbV%2Fitems%2F01VLKUHTSNW6LEL54UXVAYLMA4NA3VTSDQ%3Fversion%3DPublished&cTag=%22c%3A%7B4596B74D-94F7-41BD-85B0-1C683759C870%7D%2C2%22&encodeFailures=1&width=2139&height=1246&srcWidth=&srcHeight=)
