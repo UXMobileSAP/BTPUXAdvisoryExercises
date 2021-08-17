@@ -176,11 +176,13 @@ iOS:
 
 ![image](https://user-images.githubusercontent.com/88665915/129775993-6c611e4a-c1e3-4f4c-b528-230cba5c42f6.png)
 
-5. A preview window for your card will open to the side. Collapse `<div class="card-content">` and replace the enclosing code inclusive of the div tags with the following code and save the file. 
+5. A preview window for your card will open to the side. Collapse ```<div class="card-content">``` and replace the enclosing code inclusive of the div tags with the following code and save the file. 
 
+```
 <div class="card-content">
 This is my first card in Business Application Studio. UX Advisory for BTP Rocks!
 </div> 
+```
 
 ![image](https://user-images.githubusercontent.com/88665915/129776097-a441f4e6-bbe8-4433-be36-91d114cf9df4.png)
 
