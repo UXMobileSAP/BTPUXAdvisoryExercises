@@ -127,6 +127,14 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 
 4. Add the below destination properties:
 
+ - Name `ESH`
+ - Type `HTTP`
+ - Description `SAP Gateway ES5`
+ - URL `https://sapes5.sapdevcenter.com`
+ - Proxy Type `Internet`
+ - Authentication `BasicAuthentication`
+ - User `<your user>`
+ - Password `<your password>`
  - WebIDEEnabled `true`
  - WebIDESystem `Gateway`
  - WebIDEUsage `odata_abap,dev_abap`
