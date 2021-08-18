@@ -62,7 +62,7 @@
 
 >You will see a list of expressions specific to the intent you forked, in this case they will be related to getting the bot to tell the user a joke
 
-![list of intents](https://user-images.githubusercontent.com/88665915/129946535-1f10c089-4023-43a5-a11b-0978ed4510d7.png)
+![joke expressions](https://user-images.githubusercontent.com/88665915/129947044-24a3405a-8a52-4ab9-b2c0-5c36baa8fa4a.png)
 
 ### Step 3: Create Your Own New Intent
 
@@ -72,7 +72,7 @@
 
 2. Click `New Intent`
 
-![list of intents](https://user-images.githubusercontent.com/88665915/129946598-7413a70a-3674-4b56-bc1a-c28708c22492.png)
+![new intent](https://user-images.githubusercontent.com/88665915/129947106-21a8100f-c912-43a8-83a4-a2a0927325b6.png)
 
 3. Fill in the intent properties as follows:
   - Name : `beerRecommendations`
@@ -86,7 +86,7 @@
 
 2. In the expressions section, add expressions which are related to your intent and press `Enter` for each
 
-![list of intents](https://user-images.githubusercontent.com/88665915/129946685-dbe4bbbc-00d0-44a9-8184-e5f09bf0196e.png)
+![intent expression](https://user-images.githubusercontent.com/88665915/129947181-968d6b40-9894-4ad9-a5d6-cccafc0056a2.png)
 
 >For a productive scenario it would be a best practice to add between 30 and 50 expressions per intent. For this workshop, we do not need to add this many.
 
@@ -94,7 +94,7 @@
 
 1. You will now need to train your bot, click `train` in the top right
 
-![list of intents](https://user-images.githubusercontent.com/88665915/129946705-fda661be-f243-427d-8b91-4fafde8735a3.png)
+![intent expression](https://user-images.githubusercontent.com/88665915/129947202-e99485bb-184d-48bd-9785-0ed178620c4b.png)
 
 2. Click the `test button` on the right of the screen
 
@@ -102,7 +102,7 @@
 
 >If your intent is recognized, the bot will show you the information about the intent
 
-![list of intents](https://user-images.githubusercontent.com/88665915/129946734-3612fb31-e475-480b-9125-c5491f073b6a.png)
+![recognised intent](https://user-images.githubusercontent.com/88665915/129947261-9cb14d6d-7035-4cc9-b8d7-4404b49b4bf0.png)
 
 ### Step 5 Add Skills to the bot to manage the conversation flow
 
@@ -112,7 +112,7 @@
 
 3. Name the skill `recommend-me-a-beer`, set the type as business and click `Add`
 
-![list of intents](https://user-images.githubusercontent.com/88665915/129946762-7a6f7a82-db68-4ac3-b9f1-8ea7e6bb812d.png)
+![recognised intent](https://user-images.githubusercontent.com/88665915/129947280-a35694f3-b2d6-4a32-84f7-f47e708bf8d2.png)
 
 4. Click on the new skill and click the `Triggers` tab
 
@@ -126,7 +126,7 @@
 
 8. Click `Send Message`, choose the `Text` format and type a beer recommendation
 
-![list of intents](https://user-images.githubusercontent.com/88665915/129946837-d0d0fec4-3ed2-45a8-b81d-36b42fa68935.png)
+![skill output](https://user-images.githubusercontent.com/88665915/129947515-5e983c8a-9581-455a-839d-de2a3bcf8812.png)
 
 9. Click `Save`
 
