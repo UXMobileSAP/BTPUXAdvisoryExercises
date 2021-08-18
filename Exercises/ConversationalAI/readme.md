@@ -6,7 +6,6 @@
 - How to train your chatbot 
 - How to create skills
 - How to deploy your chatbot to the SAP Launchpad Service
-- How to build an FAQ bot
 
 ### Prerequisites
 
