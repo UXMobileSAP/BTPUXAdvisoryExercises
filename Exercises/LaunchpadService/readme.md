@@ -164,7 +164,7 @@ Before you can access the SAP Launchpad service, you first need to subscribe to 
 2. Enter app properties as follows
 
  - Title `Orders`
- - Open App `In Place`
+ - Open App `In a new tab`
  - URL `https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/cart/webapp/index.html`
 
 3. Using the navigation tab, specify the intent of your app with the following values:
