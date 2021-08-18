@@ -141,5 +141,174 @@
 
 ![image](https://user-images.githubusercontent.com/88665915/129760358-c6edbc21-278f-42a3-9759-6b1684e7564b.png)
 
+### Step 7 (Optional) Deploy to SAP Launchpad service
+
+1. Go to your Bot Settings and click on the `Connect` tab. You may then customize your webchat according to your preferences
+
+![image](https://user-images.githubusercontent.com/88665915/129890857-aeeff240-6151-4aee-b463-f17e5c89f919.png)
+
+> The webchat script gives you essential information such as the channel ID, token and so on. Make note of this section as this will be important for later steps when we create a shell plugin.
+
+2. In SAP Business Application Studio, create a new SAPUI5 based application using an SAPUI5 Application template and fill in the project template details according to your requirements
+
+![image](https://user-images.githubusercontent.com/88665915/129891032-ce62ae15-4880-4212-b0ed-928a21981c71.png)
+
+3. Choose `SAP Fiori Application`
+
+4. Select `SAPUI5 freestyle` from the `Application Type` dropdown. Then select SAPUI5 Application and click `next`.
+
+![image](https://user-images.githubusercontent.com/88665915/129891127-f62418ab-fad7-46f4-b3a0-13a3bf48047b.png)
+
+5. No need to specify any data source, click `Next`.
+
+![image](https://user-images.githubusercontent.com/88665915/129891173-d8d3c6c9-08f9-494d-a822-07e64db469ba.png)
+
+6. Fill in a view name for your plugin.
+
+![image](https://user-images.githubusercontent.com/88665915/129891200-b9870a59-e270-4764-97d3-af4cd7878566.png)
+
+7. In the project attributes fill in meaningful names for the module, application title, namespace, description and then choose an appropriate folder path.
+
+![image](https://user-images.githubusercontent.com/88665915/129891235-c6cee7b9-d7c6-4bc1-8385-26f7733d5c7a.png)
+
+8. Open the workspace containing your new project and Include the following code snippet in the component.js of your generated project:
+
+```
+    return UIComponent.extend("<your namespace will be auto generated here do not change this>.Component", {
+
+        metadata: {
+            manifest: "json"
+        },
+
+        /**
+         * The component is initialized by UI5 automatically during the startup of the app and calls the init method once.
+         * @public
+         * @override
+         */
+        init: function () {
+            var rendererPromise = this._getRenderer();
+            this.renderRecastChatbot();
+        },
+
+        renderRecastChatbot: function () {
+            if (!document.getElementById("cai-webchat")) {
+                var s = document.createElement("script");
+                s.setAttribute("id", "cai-webchat");
+                s.setAttribute("src", "https://cdn.cai.tools.sap/webchat/webchat.js");
+                document.body.appendChild(s);
+            }
+            s.setAttribute("channelId", "<YOUR CHANNEL ID>");
+            s.setAttribute("token", "<YOUR TOKEN>");
+        },
+
+        _getRenderer: function () {
+            var that = this,
+                // @ts-ignore
+                oDeferred = new jQuery.Deferred(),
+                oRenderer;
+
+            // @ts-ignore
+            that._oShellContainer = jQuery.sap.getObject("sap.ushell.Container");
+            if (!that._oShellContainer) {
+                oDeferred.reject(
+                    "Illegal State");
+            } else {
+                oRenderer = that._oShellContainer.getRenderer();
+                if (oRenderer) {
+                    oDeferred.resolve(oRenderer);
+                } else {
+                    that._onRendererCreated = function (oEvent) {
+                        oRenderer = oEvent.getParameter("renderer");
+                        if (oRenderer) {
+                            oDeferred.resolve(oRenderer);
+                        } else {
+                            oDeferred.reject("Illegal State");
+                        }
+                    };
+                    that._oShellContainer.attachRendererCreatedEvent(that._onRendererCreated);
+                }
+            }
+            return oDeferred.promise();
+        }
+    });
+```
+9. Next, we will edit the manifest.json file. We will mark this app as a component and add a CrossNavigation section while declaring it as a plugin.
+
+```
+        "crossNavigation": {
+            "inbounds": {
+                "Shell-plugin": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "hideLauncher": true,
+                    "semanticObject": "Shell",
+                    "action": "plugin"
+                }
+            }
+        }
+    },
+    "sap.flp": {
+        "type": "plugin"
+    },
 
 
+```
+
+10. From the project explorer workspace on the left we are now going to use the command “Build MTA” and deploy the mtar file which will be generated.
+
+![image](https://user-images.githubusercontent.com/88665915/129891452-783949d6-7848-4101-adbe-c6e4e925a745.png)
+
+> In some cases, it may also be necessary to change the mta.yaml file which is generated for “Approuter Managed by SAP BTP” apps in the latest version of SBAS. Under the parameters for the destination module, the instance should be subaccount as you can see below.
+
+
+```
+_schema-version: "3.2"
+ID: ztest1
+version: 0.0.1
+modules:
+- name: ztest1-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: ztest1-destination-service
+    parameters:
+      content-target: true
+  - name: ztest1_html_repo_host
+    parameters:
+      service-key:
+        name: ztest1_html_repo_host-key
+  - name: uaa_ztest1
+    parameters:
+      service-key:
+        name: uaa_ztest1-key
+  parameters:
+    content:
+      subaccount: 
+        destinations:
+        - Name: ztest1_ztest1_html_repo_host
+        ...
+
+```
+
+11. Once the application is deployed, you will see a new entry in the HTML5 Applications View in the SAP Business Technology Platform Cockpit
+
+![image](https://user-images.githubusercontent.com/88665915/129891539-5f801c0d-f4d0-4bd2-9720-8397ba9345e6.png)
+
+12. Go to the Launchpad Service and obtain the latest content for HTML5 Applications
+
+![image](https://user-images.githubusercontent.com/88665915/129891584-c31068b8-b602-4706-88ba-45e476f38b57.png)
+
+13. Now add the shell plugin to your content
+
+![image](https://user-images.githubusercontent.com/88665915/129891616-e96a6f83-46e1-4bc7-8b56-96b5ccdb291d.png)
+
+14. Assign the shell plugin to a role of your choice. For simplicity the everyone role has been used here.
+
+![image](https://user-images.githubusercontent.com/88665915/129891646-536ae662-2b4d-4aed-9cf4-02ae8096f2cc.png)
+
+15. The chatbot is now ready for usage and testing and will appear in the bottom right of the Launchpad as per how you have configured it in the initial steps of the exercise.
+
+![image](https://user-images.githubusercontent.com/88665915/129891694-666934a8-240f-4712-8acf-a91dc964bd80.png)
+
+![image](https://user-images.githubusercontent.com/88665915/129891722-958877e6-1255-4294-a6c3-345ed26caf6c.png)
