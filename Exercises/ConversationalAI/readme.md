@@ -158,7 +158,7 @@
 
 ![image](https://user-images.githubusercontent.com/88665915/129891127-f62418ab-fad7-46f4-b3a0-13a3bf48047b.png)
 
-5. No need to specify any data source, click `Next`.
+5. Specify data source as `None`, click `Next`.
 
 ![image](https://user-images.githubusercontent.com/88665915/129891173-d8d3c6c9-08f9-494d-a822-07e64db469ba.png)
 
@@ -166,11 +166,15 @@
 
 ![image](https://user-images.githubusercontent.com/88665915/129891200-b9870a59-e270-4764-97d3-af4cd7878566.png)
 
-7. In the project attributes fill in meaningful names for the module, application title, namespace, description and then choose an appropriate folder path.
+7. In the project attributes fill in meaningful names for the module, application title, namespace, description and then choose an appropriate folder path. **For `Add a deployment configuration`, choose `Yes`** then click `Next`
 
-![image](https://user-images.githubusercontent.com/88665915/129891235-c6cee7b9-d7c6-4bc1-8385-26f7733d5c7a.png)
+![BASFLPConfig](https://user-images.githubusercontent.com/88665915/130215122-850acf0b-730b-43e1-8bd9-ea50f1c101b4.png)
 
-8. Open the workspace containing your new project and Include the following code snippet in the component.js of your generated project:
+8. On Deployment Configuration, choose target `Cloud Foundry`, Choose Destination name `ES5`. **For Add Application to manager application router, choose `Yes`**
+
+![Deployment Config](https://user-images.githubusercontent.com/88665915/130215556-2f942b79-89ee-4a21-96d8-408d013f56b4.png)
+
+9. Open the workspace containing your new project and Include the following code snippet in the component.js of your generated project:
 
 ```
     return UIComponent.extend("<your namespace will be auto generated here do not change this>.Component", {
@@ -231,7 +235,7 @@
         }
     });
 ```
-9. Next, we will edit the manifest.json file. We will mark this app as a component and add a CrossNavigation section while declaring it as a plugin.
+10. Next, we will edit the manifest.json file. We will mark this app as a component and add a CrossNavigation section while declaring it as a plugin.
 
 ```
         "crossNavigation": {
@@ -255,7 +259,7 @@
 
 ```
 
-10. From the project explorer workspace on the left we are now going to use the command “Build MTA” and deploy the mtar file which will be generated.
+11. From the project explorer workspace on the left we are now going to use the command “Build MTA” and deploy the mtar file which will be generated.
 
 ![image](https://user-images.githubusercontent.com/88665915/129891452-783949d6-7848-4101-adbe-c6e4e925a745.png)
 
@@ -290,23 +294,23 @@ modules:
 
 ```
 
-11. Once the application is deployed, you will see a new entry in the HTML5 Applications View in the SAP Business Technology Platform Cockpit
+12. Once the application is deployed, you will see a new entry in the HTML5 Applications View in the SAP Business Technology Platform Cockpit
 
 ![image](https://user-images.githubusercontent.com/88665915/129891539-5f801c0d-f4d0-4bd2-9720-8397ba9345e6.png)
 
-12. Go to the Launchpad Service and obtain the latest content for HTML5 Applications
+13. Go to the Launchpad Service and obtain the latest content for HTML5 Applications
 
 ![image](https://user-images.githubusercontent.com/88665915/129891584-c31068b8-b602-4706-88ba-45e476f38b57.png)
 
-13. Now add the shell plugin to your content
+14. Now add the shell plugin to your content
 
 ![image](https://user-images.githubusercontent.com/88665915/129891616-e96a6f83-46e1-4bc7-8b56-96b5ccdb291d.png)
 
-14. Assign the shell plugin to a role of your choice. For simplicity the everyone role has been used here.
+15. Assign the shell plugin to a role of your choice. For simplicity the everyone role has been used here.
 
 ![image](https://user-images.githubusercontent.com/88665915/129891646-536ae662-2b4d-4aed-9cf4-02ae8096f2cc.png)
 
-15. The chatbot is now ready for usage and testing and will appear in the bottom right of the Launchpad as per how you have configured it in the initial steps of the exercise.
+16. The chatbot is now ready for usage and testing and will appear in the bottom right of the Launchpad as per how you have configured it in the initial steps of the exercise.
 
 ![image](https://user-images.githubusercontent.com/88665915/129891694-666934a8-240f-4712-8acf-a91dc964bd80.png)
 
